@@ -6,19 +6,46 @@
         body {
             background-color: #f0f0f0;
             font-family: Arial, sans-serif;
+            display: grid;
+            grid-template-areas:
+                "header header"
+                "nav nav"
+                "main aside"
+                "footer footer";
+            grid-template-columns: 3fr 1fr;
+            gap: 20px;
+            padding: 20px;
         }
 
-        nav a, footer p {
-            margin: 10px;
-            color: #333;
+        header, nav, main, aside, footer {
+            padding: 20px;
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
         }
 
-        a:hover {
-            color: #007bff;
+        nav, footer {
+            grid-column: 1 / -1;
         }
 
-        h1 {
-            color: #333;
+        nav a {
+            margin-right: 15px;
+        }
+
+        aside {
+            grid-area: aside;
+        }
+
+        main {
+            grid-area: main;
+        }
+
+        header {
+            grid-area: header;
+        }
+
+        footer {
+            grid-area: footer;
         }
     </style>
 </head>
