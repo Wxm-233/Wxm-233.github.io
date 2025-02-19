@@ -8,3 +8,5 @@ redirect_from:
 ---
 
 {% include base_path %}
+
+Here is my [CV](https://Wxm-233.github.io/files/CV.pdf)
